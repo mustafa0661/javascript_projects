@@ -25,3 +25,9 @@ console.log(sonuc);
 console.log(x == "10");
 console.log(x === "10");
 console.log(x!=z);
+
+/*Mantıksal opartörler*/
+
+console.log((x>y) && (x>z));
+
+console.log((x<y) || (x>z));
