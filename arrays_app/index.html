@@ -15,12 +15,22 @@
         var models = ['Toyota', 'Mazda', 'Mercedes', 'Opel'];
         var years = ['2015', '2012', '2016', '2014'];
 
+
+
+        var answer ;
+        while(answer != 'q'){
+
+            models.push(prompt("Eklemek istediğiniz modeli yazınız"));
+            years.push(prompt("Eklemek istediğiniz yılı giriniz"));
+
+            answer = prompt("İşlemi sonlandırmak için q değerini girin.");
+
+        }
+
         for(var i = 0; i<models.length; i++){
             console.log(models[i]);
             console.log(models[i] + " " + years[i] + " ve " + (2018-years[i]) + " yaşında bir araçtır.");
         }
-
-
         
     </script>
 
