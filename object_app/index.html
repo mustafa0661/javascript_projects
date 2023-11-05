@@ -16,14 +16,61 @@
             telefon: '02623333333',
             adres: 'İzmit Kocaeli',
             meslek: 'bilgisayar mühendisi',
-            diller: 'ingilizce,almanca',
-            hobiler: 'sinema,spor,kitap okumak'
+            diller: ['ingilizce','almanca'],
+            hobiler: ['sinema','spor','kitap okumak']
         };
 
-        console.log(ali);
+        console.log(ali.diller.length);
         
+        ali.hobiler.forEach(function(element){
+            console.log(element);
+        });
 
+        var personel = [
 
+            {
+                ad: 'Ali',
+                soyad: 'Yılmaz',
+                cinsiyet : 'Erkek',
+                telefon: '02623333333',
+                adres: 'İzmit Kocaeli',
+                meslek: 'bilgisayar mühendisi',
+                diller: ['ingilizce','almanca'],
+                hobiler: ['sinema','spor','kitap okumak']
+            },
+            {
+                ad: 'Mehmet',
+                soyad: 'Yılmaz',
+                cinsiyet : 'Erkek',
+                telefon: '02623333333',
+                adres: 'İzmit Kocaeli',
+                meslek: 'bilgisayar mühendisi',
+                diller: ['ingilizce','almanca'],
+                hobiler: ['sinema','spor','kitap okumak']
+            },
+            {
+                ad: 'Pınar',
+                soyad: 'Yılmaz',
+                cinsiyet : 'Erkek',
+                telefon: '02623333333',
+                adres: 'İzmit Kocaeli',
+                meslek: 'personel müdürü',
+                diller: ['ingilizce','almanca'],
+                hobiler: ['sinema','spor','kitap okumak']
+            }
+        ]
+
+            console.log(personel.length);
+            personel.forEach(function(personel){
+
+                console.log("*****************************");
+                console.log(personel.ad + " " + personel.soyad);
+                console.log("*****************************");
+                personel.diller.forEach(function(dil){
+                    console.log(dil);
+                })
+
+            });
 
 
     </script>
