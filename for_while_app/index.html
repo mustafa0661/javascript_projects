@@ -16,11 +16,44 @@
         }
 */
 
-        var j = 11; 
+/*        var j = 11; 
         while(j<100){
             console.log(j);
             j = j + 5;
         }
+*/
+
+
+        var k_username = "guest";
+        var k_password = "616161";
+        var loggedin = false;
+
+        while(!loggedin){
+            var _username = prompt("Kullanıcı adınızı giriniz");
+            var _password = prompt("Şifrenizi giriniz:");
+
+            if((k_username == _username) && (k_password == _password)){
+            console.log("Giriş yapıldı");
+            loggedin = true;
+            }
+            else if((k_username !== _username) && (k_password == _password)){
+                console.log("Hatalı kullanıcı adı");
+            }
+            else if((k_username == _username) && (k_password !== _password)){
+                console.log("Hatalı parola");
+            }
+            else{
+            console.log("Hatalı kullanıcı adı ve şifre yanlış");
+            }
+        }
+
+        
+
+
+
+
+            
+        
     </script>
 </body>
 </html>
