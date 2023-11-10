@@ -60,8 +60,14 @@
     </ul>   
     <script>
 
-        var todoList = document.getElementById('todoList');
-        todoList.style.listStyleType = 'none';
+ /*       var todoList = document.getElementById('todoList');
+        todoList.style.listStyleType = 'none';*/
+
+        var listItems = document.querySelectorAll('li');
+
+        listItems.forEach(function(item){
+            item.style.textDecoration = 'line-through';
+        });
 
     </script>
 
