@@ -35,10 +35,18 @@
             var k_yas = yasHesapla(yas);
             var emeklilik = 65 - k_yas;
 
-            console.log(ad + ' ' + emeklilik + ' yıl sonra emekli olabilir');
+            if(emeklilik > 0){  
+                console.log(ad + ' ' + emeklilik + ' yıl sonra emekli olabilir');
+            }
+            else{
+                console.log(ad + ' zaten ' + (emeklilik * -1) + ' yıl önce emekli olmuştur.');
+            }
+
+            
         }
 
         emeklilikHesapla('Hüseyin',1975);
+        emeklilikHesapla('Mustafa',1950);
     </script>
 
 
