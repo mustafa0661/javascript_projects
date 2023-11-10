@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        .active{
+            color:red;
+            font-size: 50px;
+            border: 1px solid blue;
+            padding: 10px;
+        }
+
+        .f45{
+            font-size: 45px;
+        }
+    </style>
 </head>
 <body>
     
@@ -13,7 +26,21 @@
 
     <img src="img/istockphoto-155439315-612x612.jpg" width="500">
 
-    
+    <script>
+
+        var title = document.getElementById('title');
+
+        title.classList.add('active');
+        title.classList.add('f45');
+        console.log(title.classList);
+/*        title.style.color = 'yellow';
+        title.style.fontSize = '50px';
+        title.style.border = '1px solid blue';
+        title.style.padding = '10px';*/
+
+
+
+    </script>
 
 </body>
 </html>
