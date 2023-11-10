@@ -25,17 +25,22 @@
 
         doubleOrOdd(number);*/
 
- /*       var number = prompt("Bir sayı giriniz");
+        var number = prompt("Bir sayı giriniz");
+        
         function factorial(number){
+            var result = 1;
 
-            while(number != 0)
-                result = number * (number -1 );
-                number--;
+            for(var i = 2; i<=number; i++){
+                result *= i; 
+            }
+            return result;
         }
 
-        factorial(number);*/
+        console.log(factorial(number));
 
-        var models = ['Toyota', 'Mazda', 'Mercedes', 'Opel'];
+
+
+ /*       var models = ['Toyota', 'Mazda', 'Mercedes', 'Opel'];
 
         function arrays(models){
             models.forEach(element => {
@@ -43,7 +48,7 @@
             });
         }
 
-        arrays(models);
+        arrays(models);*/
 
     </script>
 
