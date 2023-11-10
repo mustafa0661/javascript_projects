@@ -14,11 +14,34 @@
             price : 50000,
             description : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, quisquam!',
             summary : function(){
-                
+                var ozetcumle = [];
+                var maxKarakter = 20;
+                var cumle = this.description;
+                if(maxKarakter>cumle.length){
+                    this.shortDescription = cumle;
+                }
+                else{
+                    var kelimeler = cumle.split(' ');
+
+                    var toplamKarakter = 0;
+
+                    for(var i = 0; i<kelimeler.length; i++){
+                        ozetcumle.unshift(kelimeler[i]);
+                        toplamKarakter+=kelimeler[i].length;
+
+                        if(toplamKarakter > maxKarakter){
+                            break;
+                        }
+                    }
+                }
+
+                this.shortDescription = ozetcumle.join(' ') + '...';
             }
         };
 
-        var cumle = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, quisquam!';
+        product.summary();
+
+        console.log(product);
 
         function ozet(cumle,maxKarakter){
             var ozetcumle = [];
@@ -44,7 +67,7 @@
             return ozetcumle.join(' ') + '...';
         }
 
-        console.log(ozet(cumle,30));
+//        console.log(ozet(cumle,30));
         
 
     </script>
