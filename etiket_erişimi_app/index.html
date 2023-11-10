@@ -63,11 +63,21 @@
  /*       var todoList = document.getElementById('todoList');
         todoList.style.listStyleType = 'none';*/
 
-        var listItems = document.querySelectorAll('li');
+/*        var listItems = document.querySelectorAll('li');
 
-        listItems.forEach(function(item){
+          listItems.forEach(function(item){
             item.style.textDecoration = 'line-through';
-        });
+        });*/
+
+
+        var date = new Date();
+        var hour = date.getHours();
+        var element;
+        for(var i = hour; i>=8; i--){
+            element = document.getElementById('item_'+i);
+            element.style.textDecoration = 'line-through';
+            element.querySelector('input').checked=true;
+        }
 
     </script>
 
